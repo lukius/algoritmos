@@ -142,7 +142,6 @@ vector<int> msort(
     for(; i0 < v1.size(); i0++)
         res.push_back(v1[i0]);
 
-
     for(; j0 < v2.size(); j0++)
         res.push_back(v2[j0]);
 

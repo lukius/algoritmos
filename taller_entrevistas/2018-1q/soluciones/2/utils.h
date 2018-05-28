@@ -26,7 +26,7 @@ bool bsearch(
     {
         m = i + (j-i)/2;
 
-        if(A[m] == elem && (m == 0 || A[m-1] != elem))
+        if(A[m] == elem && (m == from || A[m-1] != elem))
         {
             i = m;
             found = true;
