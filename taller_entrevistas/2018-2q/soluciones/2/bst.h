@@ -23,6 +23,8 @@ struct bst
 	};
 	
 	bst(T root, bst &t, bool is_left_subtree =true) :
+		left(nullptr),
+		right(nullptr),
 		root(root)
 	{
 		if(is_left_subtree)
