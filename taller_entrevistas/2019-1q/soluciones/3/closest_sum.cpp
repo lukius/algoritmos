@@ -35,18 +35,16 @@ double closest_sum_to_target(
 	std::sort(B1.begin(), B1.end());
 	
 	ssize_t n = A.size();
-	double min_dist = DIST(0,n-1), d;
+	double min_dist = DIST(0,n-1);
 	
 	for(
 		ssize_t i = 0, j = n-1;
 		i < n && j >= 0 && min_dist > 0;)
 	{
-		while(
-			i < n &&
-			(d=DIST(i,j)) > DIST(i+1,j))
+		while(i < n-1 && DIST(i,j) > DIST(i+1,j))
 			i++;
 		
-		min_dist = std::min(min_dist, d);
+		min_dist = std::min(min_dist, DIST(i,j));
 		
 		j--;
 	}
