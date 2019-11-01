@@ -14,7 +14,7 @@
 // restantes miembros corresponden a pegar el buffer sucesivas veces. Para esto
 // es necesario seleccionar y copiar previamente, de modo que como mínimo 
 // debemos consumir tres teclas.
-// Una implementación directa de esta fórmula no tendria sentido práctico
+// Una implementación directa de esta fórmula no tendría sentido práctico
 // debido a la repetición sistemática de cómputos derivada del solapamiento de
 // los distintos subproblemas. Por este motivo, la siguiente función utiliza la
 // técnica de memorización para tabular los resultados intermedios. La
