@@ -1,9 +1,4 @@
-// Segundo problema: decidir si un arreglo contiene tres números cuya suma sea
-// exactamente cero.
-
 #include <algorithm>
-#include <iostream>
-
 #include "utils.h"
 #include "zeros.h"
 
