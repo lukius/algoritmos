@@ -8,7 +8,7 @@
 // problema. Si notamos A(n) a la máxima cantidad de As que pueden ser
 // generadas presionando exactamente n teclas, tenemos que
 //  * A(n) = n si n ≤ 3
-//  * A(n) = máx { 1+A(n-1), 2A(n-3), 3A(n-4),..., (n-2)*A(1) }
+//  * A(n) = máx { 1+A(n-1), 2A(n-3), 3A(n-4),..., (n-2)*A(1) } si n > 3
 // En esta última igualdad, el primer miembro del conjunto del lado derecho
 // surge de finalizar las n teclas presionando una A, mientras que los
 // restantes miembros corresponden a pegar el buffer sucesivas veces. Para esto
