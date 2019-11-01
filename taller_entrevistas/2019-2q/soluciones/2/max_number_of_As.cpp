@@ -35,10 +35,10 @@ int max_number_of_As_1(int n, std::unordered_map<int,int> *cache =nullptr)
         An = cache->at(n);
     else
     {
-        An = max_number_of_As_1(n-1, cache) + 1;
+        An = max_number_of_As_1(n-1,cache) + 1;
 
         for(int i = 3; i <= n-1; i++)
-            An = std::max(An, max_number_of_As_1(n-i)*(i-1));
+            An = std::max(An, max_number_of_As_1(n-i,cache)*(i-1));
 
         cache->insert({n,An});
     }
